@@ -67,4 +67,4 @@ run the experiement:
 ```
 sh run_mlm.sh
 ```
- to draw attention maps rerun the [notebook]()
+ to draw attention maps rerun the [notebook](https://github.com/Arij-Aladel/T5-Tasks/blob/main/T5-heatmap_MLM_test_128.ipynb)
