@@ -63,5 +63,8 @@ Available Tensor Operations:                                                    
 You may need to install some libraries install them using pip
        
    ✨ Vioal ✨ ! you are now ready to reproduce the experiements!
-
-
+run the experiement:
+```
+sh run_mlm.sh
+```
+ to draw attention maps rerun the [notebook]()
