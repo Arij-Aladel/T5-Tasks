@@ -7,7 +7,6 @@ Horovod is used for multi-gpu and multi-node training.
 
 
 ###  Install Horovod
-Depending on your setup just `pip install horovod==0.23.0` might work.
 For the same steup as mine you can follow these steps:
 1. Install [conda](https://docs.anaconda.com/anaconda/install/index.html)
 2. run this commands inside the project folader  
