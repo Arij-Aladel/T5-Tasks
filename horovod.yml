@@ -1,0 +1,25 @@
+name: adel
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - ccache
+  - cmake
+  - cudnn=8.2
+  - cudatoolkit=11.1
+  - cudatoolkit-dev=11.1
+  - gxx_linux-64=9.4
+  - git
+  - jupyterlab
+  - jupyterlab-git
+  - jupyterlab-lsp
+  - jupyterlab-nvdashboard
+  - matplotlib
+  - mpi4py # installs cuda-aware openmpi
+  - nccl
+  - openmpi
+  - pip
+  - python=3.9
+  - python-language-server
