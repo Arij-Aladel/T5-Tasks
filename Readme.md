@@ -22,6 +22,25 @@ For the same steup as mine you can follow these steps:
         ```
         conda env create --prefix $ENV_PREFIX --file horovod.yml --force
         ```
+        
+   ```
+   
+   ```
+   For Linux 64, Open MPI is built with CUDA awareness but this support is disabled by default.
+   To enable it, please set the environment variable OMPI_MCA_opal_cuda_support=true before
+   launching your MPI processes. Equivalently, you can set the MCA parameter in the command line:
+   mpiexec --mca opal_cuda_support 1 ...
+
+   In addition, the UCX support is also built but disabled by default.
+   To enable it, first install UCX (conda install -c conda-forge ucx). Then, set the environment
+   variables OMPI_MCA_pml="ucx" OMPI_MCA_osc="ucx" before launching your MPI processes.
+   Equivalently, you can set the MCA parameters in the command line:
+   mpiexec --mca pml ucx --mca osc ucx ...
+   Note that you might also need to set UCX_MEMTYPE_CACHE=n for CUDA awareness via UCX.
+   Please consult UCX's documentation for detail.
+
+   ```
+   
 3. Activate the conda environment after that run one by one pip installations:
    ```
    pip  install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
