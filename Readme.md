@@ -18,12 +18,12 @@ For the same steup as mine you can follow these steps:
         export HOROVOD_NCCL_HOME=$NCCL_HOME
         export HOROVOD_NCCL_LINK=SHARED
         export HOROVOD_GPU_OPERATIONS=NCCL```        
-      then run the command:        
-        ```
-        conda env create --prefix $ENV_PREFIX --file horovod.yml --force
-        ```
+  then run the command:        
+     ```
+     conda env create --prefix $ENV_PREFIX --file horovod.yml --force
+     ```
         
-   ```
+ Note that
    
    ```
    For Linux 64, Open MPI is built with CUDA awareness but this support is disabled by default.
